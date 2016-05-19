@@ -1,0 +1,14 @@
+﻿@model List<Lab_4_Exercise2.Models.Grade>
+
+<table class="table">
+    <tr>
+        <th>Course Name</th>
+        <th>Grade</th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.CourseName)</td>
+        <td>@Html.DisplayFor(modelItem => item.GradeValue)</td>
+    </tr>
+}
+</table>
